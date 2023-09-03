@@ -1,0 +1,24 @@
+{
+  "name": "crud_nodejs",
+  "version": "1.0.0",
+  "description": "CRUD com um sistema de cadastro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micherenio-nascimento/CRUD_NODEJS.git"
+  },
+  "author": "Micherenio Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micherenio-nascimento/CRUD_NODEJS/issues"
+  },
+  "homepage": "https://github.com/micherenio-nascimento/CRUD_NODEJS#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.0"
+  }
+}
