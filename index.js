@@ -40,6 +40,23 @@ app.get("/read", (req,res)=> {
     })
 })
 
+// Rota Update
+app.put("/update/:id", (req, res) => {
+    const { id } = req.params;
+    const {nome} = req.body;
+    const {idade} = req.body;
+    const {telefone} = req.body;
+    
+    let mysql = "UPDATE usuarios SET nome = ?, idade = ?, telefone = ? WHERE id = ?";
+    db.query(mysql, [nome, idade, telefone, id], (err, result) => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send(result);
+      }
+    });
+});
+
 
 
 app.listen(3001, ()=> {
