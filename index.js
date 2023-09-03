@@ -58,6 +58,19 @@ app.put("/update/:id", (req, res) => {
 });
 
 
+// Rota Delete
+app.delete("/delete/:id", (req, res) => {
+    const { id } = req.params;
+    let mysql = "DELETE FROM usuarios WHERE id = ?";
+    db.query(mysql, id, (err, result) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.send(result);
+      }
+    });
+});
+
 
 app.listen(3001, ()=> {
     console.log("server on!!!")
