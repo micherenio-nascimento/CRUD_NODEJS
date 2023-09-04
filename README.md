@@ -22,7 +22,7 @@ npm init # Isso vai gerar o package.json
 npm install express
 
 # Mysql
-npm install express
+npm install mysql
 ```
 
 ## Mysql no Docker
