@@ -42,7 +42,7 @@ docker exec -it <id> bash
         nome VARCHAR(20) NOT NULL,
         idade INT NOT NULL,
         telefone VARCHAR(20) NOT NULL,
-        PRIMARY KEY (id_produto)
+        PRIMARY KEY (id)
     );
 ```
 </br></br>
