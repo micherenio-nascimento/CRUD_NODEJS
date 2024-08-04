@@ -61,3 +61,6 @@ docker exec -it <id> bash
 
 ![delete](/img/postman/delete.png)
 </br>
+
+## Categoria
+**backend**
